@@ -1,0 +1,39 @@
+//This is our first video tutorial in Simon game series
+#include<stdio.h>   //for input and output
+#include<ctype.h>   //for toupper() function
+
+int main(void)
+{
+    char another_game='Y';
+    const unsigned int DELAY = 1;
+   /* more variable declaration for the program*/
+
+
+  // describe how the gam is played
+
+  printf("\n To play Simon Game, ");
+  printf(" watch the screen for sequence of digits");
+  printf("\n Watch carefully because digits are only displayes"  " for %u second%s",DELAY,DELAY>1?"s!":"!");
+  printf("\n Then computer will remove them, and then prompt you");
+  printf(" to enter same sequence.");
+  printf("\n when u do then put the space between the digits.\n ");
+  printf("GOOD LUCK!\n Press enter to play\n");
+  printf("%c",&another_game);
+ 
+  do
+  {
+     /* Initalize a game */
+     /* Inner loop to play the game*/
+     /*output the score when the game is finished*/
+     //Check if a new game is required
+     
+   printf("\n DO you want to play again(y/n)");
+   scanf("%c",another_game);
+   
+  }while(toupper(another_game)=='Y')
+  return 0;
+
+}
+
+
+

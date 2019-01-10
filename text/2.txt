@@ -1,0 +1,41 @@
+//This is our first video tutorial in Simon game series
+#include<stdio.h>   //for input and output
+#include<ctype.h>   //for toupper() function
+#include<stdbool.h>
+
+
+
+int main(void)
+{
+    char another_game='Y';
+    const unsigned int DELAY = 1;
+    bool correct= true;
+   /* rest of the declaration of the program declaration for the          program*/
+   // statment that describing  how the game is played before......
+   //Game loop an outer loop iteration is a complete game
+   
+   do
+   {
+    
+     correct = true;
+     /* other code to Initalize the game */
+     /* Inner loop continue as long as sequence is entered correctly */
+     
+     while(correct)
+      {
+        /*statement to play the game*/
+      }
+
+     /*output the score when the game is finished*/
+     //Check if a new game is required
+     
+     printf("\n DO you want to play again(y/n)");
+     scanf("%c",another_game);
+   
+  }while(toupper(another_game)=='Y')
+  return 0;
+
+}
+
+
+
